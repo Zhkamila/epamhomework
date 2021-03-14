@@ -12,6 +12,10 @@ public class Composer extends Artist {
         super(firstname, lastname, birthYear, birthPlace);
     }
 
+    public Composer(String firstname, String lastname) {
+        super(firstname, lastname);
+    }
+
     public String getInstrument() {
         return instrument;
     }

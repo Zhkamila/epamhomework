@@ -14,6 +14,10 @@ public class Songwriter extends Artist {
         super(firstname, lastname, birthYear, birthPlace);
     }
 
+    public Songwriter(String firstname, String lastname) {
+        super(firstname, lastname);
+    }
+
     public Genre getGenre() {
         return genre;
     }

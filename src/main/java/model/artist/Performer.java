@@ -6,13 +6,18 @@ public class Performer extends Artist {
     private String stageName;
     private VoiceType voice;
 
-    public Performer(String firstname, String lastname, int birthYear, String birthPlace, String label, VoiceType voice) {
+    public Performer(String firstname, String lastname, int birthYear, String birthPlace, String label, String stageName, VoiceType voice) {
         super(firstname, lastname, birthYear, birthPlace, label);
+        this.stageName = stageName;
         this.voice = voice;
     }
 
     public Performer(String firstname, String lastname, int birthYear, String birthPlace) {
         super(firstname, lastname, birthYear, birthPlace);
+    }
+
+    public Performer(String firstname, String lastname) {
+        super(firstname, lastname);
     }
 
     public String getStageName() {

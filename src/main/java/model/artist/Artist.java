@@ -22,6 +22,11 @@ public abstract class Artist {
         this.birthPlace = birthPlace;
     }
 
+    protected Artist(String firstname, String lastname) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+    }
+
     public String getFirstname() {
         return firstname;
     }
@@ -32,6 +37,14 @@ public abstract class Artist {
 
     public int getBirthYear() {
         return birthYear;
+    }
+
+    public void setBirthYear(int birthYear) {
+        this.birthYear = birthYear;
+    }
+
+    public void setBirthPlace(String birthPlace) {
+        this.birthPlace = birthPlace;
     }
 
     public String getBirthPlace() {

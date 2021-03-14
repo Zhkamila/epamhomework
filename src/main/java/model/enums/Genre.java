@@ -5,22 +5,21 @@ public enum Genre {
     HIPHOP("Hip-hop"),
     INDIEROCK("Indie rock"),
     KPOP("K-pop"),
-    RAP("Rap"),
     POP("Pop"),
     ROCK("Rock");
 
-    private String genre;
+    private String genreName;
 
-    Genre(String genre) {
-        this.genre = genre;
+    Genre(String genreName) {
+        this.genreName = genreName;
     }
 
-    public String getGenre() {
-        return genre;
+    public String getGenreName() {
+        return genreName;
     }
 
     @Override
     public String toString() {
-        return genre;
+        return genreName;
     }
 }

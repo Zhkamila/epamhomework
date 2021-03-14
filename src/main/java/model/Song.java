@@ -12,28 +12,29 @@ public class Song {
     private Composer composer;
     private int length;
     private Genre genre;
-    private int releaseYear;
 
-    public Song(String title, Performer performer, Songwriter songwriter, Composer composer, int length, Genre genre, int releaseYear) {
+    public Song(String title, Performer performer, Songwriter songwriter, Composer composer, int length, Genre genre) {
         this.title = title;
         this.performer = performer;
         this.songwriter = songwriter;
         this.composer = composer;
         this.length = length;
         this.genre = genre;
-        this.releaseYear = releaseYear;
     }
 
-    public Song(String title, int length, Genre genre, int releaseYear) {
+    public Song(String title, int length, Genre genre) {
         this.title = title;
         this.length = length;
         this.genre = genre;
-        this.releaseYear = releaseYear;
     }
 
     public Song(String title, Performer performer) {
         this.title = title;
         this.performer = performer;
+    }
+
+    public Song(String title) {
+        this.title = title;
     }
 
     public String getTitle() {
@@ -80,24 +81,8 @@ public class Song {
         this.genre = genre;
     }
 
-    public int getReleaseYear() {
-        return releaseYear;
-    }
-
-    public void setReleaseYear(int releaseYear) {
-        this.releaseYear = releaseYear;
-    }
-
     @Override
     public String toString() {
-        return "Song{" +
-                "title='" + title + '\'' +
-                ", performer=" + performer +
-                ", songwriter=" + songwriter +
-                ", composer=" + composer +
-                ", length=" + length +
-                ", genre=" + genre +
-                ", releaseYear=" + releaseYear +
-                '}';
+        return "\n'" + title + "' " + genre.getGenreName() + " song " + length + " minutes";
     }
 }
