@@ -66,6 +66,6 @@ public class Album {
 
     @Override
     public String toString() {
-        return "Album title: " + title + "\nYear of release: " + releaseYear + "\nSongs: " + songs ;
+        return "Album title: " + title + "\nYear of release: " + releaseYear + "\nSongs: " + songs;
     }
 }
